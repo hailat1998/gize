@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.tooling.preview.Preview
+import com.hd1998.gize.home.Home
 import com.hd1998.gize.ui.theme.GizeTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                   Home()
                 }
             }
         }
@@ -33,6 +34,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
+
     Text(text = "Hello $name!")
 }
 
