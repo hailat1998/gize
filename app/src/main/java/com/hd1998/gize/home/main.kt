@@ -12,7 +12,8 @@ import androidx.compose.ui.tooling.preview.Preview
 fun Home(){
     Scaffold(topBar = {
         TabContent(modifier = Modifier) }){
-        Text(text = "Say my name" , Modifier.padding(it))
+        Text(text = "" , Modifier.padding(it))
+        HomeContent(alarms = list)
     }
 }
 @Preview
